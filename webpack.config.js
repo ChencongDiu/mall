@@ -2,7 +2,7 @@
 * @Author: Chencong
 * @Date:   2017-08-19 07:30:00
 * @Last Modified by:   x
-* @Last Modified time: 2017-08-20 05:26:40
+* @Last Modified time: 2017-10-22 14:23:54
 */
 var webpack 			= require('webpack');
 var ExtractTextPlugin   = require("extract-text-webpack-plugin");
@@ -17,14 +17,14 @@ var getHtmlConfig = function(name) {
     		filename: 'view/' + name + '.html',
     		inject  : true,
     		hash    : true,
-    		chunks : ['common', name]
+    		chunks  : ['common', name]
 	};
 };
 var config = {
     entry: {
     	'common': ['./src/page/common/index.js'],
     	'index' : ['./src/page/index/index.js'],
-    	'login' : ['./src/page/login/index.js'],
+        'login' : ['./src/page/login/index.js'],
     },
     output: {
         path: './dist',
