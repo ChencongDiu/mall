@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<%= require('html-loader!./layout/html-common.html') %>
+		<title><%=	htmlWebpackPlugin.options.title %> - DaigouLin</title>
+	</head>
+	<body>
+		<%= require('html-loader!./layout/nav-simple.html') %>
+		<div class="page-wrap w">
+			<div class="result-con register-success">
+				<h1 class="result-title">Registration Successful!</h1>
+				<div class="result-content">
+					<a href="./index.html" class="link">Back To Homepage</a>
+				</div>
+			</div>
+			<div class="result-con default-success">
+				<h1 class="result-title">Operation Successful!</h1>
+				<div class="result-content">
+					<a href="./index.html" class="link">Back To Homepage</a>
+				</div>
+			</div>
+		</div>
+		<%= require('html-loader!./layout/footer.html') %>
+	</body>
+</html>

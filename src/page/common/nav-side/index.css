@@ -1,0 +1,27 @@
+/*
+* @Author: x
+* @Date:   2017-10-23 15:34:38
+* @Last Modified by:   x
+* @Last Modified time: 2017-10-23 17:02:06
+*/
+/* main nav */
+.nav-side {
+	float: left;
+	width: 130px;
+	min-height: 100px;
+}
+.nav-side .nav-item {
+	line-heght: 25;
+	font-size: 13px;
+}
+.nav-side .nav-item .link {
+	color: #888;
+}
+.nav-side .nav-item.active .link {
+	color: #c60023;
+}
+/* right content */
+.content.with-nav {
+	float: left;
+	width: 950px;
+}
